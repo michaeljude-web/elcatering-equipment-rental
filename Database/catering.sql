@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 30, 2025 at 02:02 AM
+-- Generation Time: Sep 11, 2025 at 03:01 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -38,26 +38,44 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`) VALUES
-(1, 'admin', 'admin123');
+(1, 'admin1', 'admin123');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category`
+-- Table structure for table `categories`
 --
 
-CREATE TABLE `category` (
+CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
-  `category_name` varchar(100) NOT NULL
+  `category_name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `category`
+-- Dumping data for table `categories`
 --
 
-INSERT INTO `category` (`id`, `category_name`) VALUES
-(1, 'fff'),
-(4, 'zcdzdcsdf');
+INSERT INTO `categories` (`id`, `category_name`) VALUES
+(23, 'dd'),
+(25, 'd'),
+(26, 'as'),
+(27, 'ssadasd'),
+(28, 'dsasadadasd'),
+(29, 'sddasda'),
+(30, 'adasdas'),
+(31, 'sadsads'),
+(32, 'adsasd'),
+(33, 'asdsadas'),
+(34, 'sadsadas'),
+(35, 'asdas'),
+(36, 'sadsasa'),
+(37, 'asdsadasd'),
+(38, 'asdasdasdsa'),
+(39, 'sdadasdsa'),
+(40, 'asdsad'),
+(41, 'sadasds'),
+(42, 'sadsadsa'),
+(43, 'sadsa');
 
 --
 -- Indexes for dumped tables
@@ -70,9 +88,9 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `category`
+-- Indexes for table `categories`
 --
-ALTER TABLE `category`
+ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -86,10 +104,10 @@ ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `category`
+-- AUTO_INCREMENT for table `categories`
 --
-ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `categories`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
